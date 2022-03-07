@@ -1,7 +1,10 @@
 function draw(){
 	let canvas = document.getElementById('canva');
 	let ctx = canvas.getContext('2d');
-	  ctx.fillStyle = 'pink'; 
-	  ctx.fillRect(150,75,150,150);
-	 
+	    ctx.beginPath();
+	    ctx.fillStyle = 'pink';
+  		ctx.moveTo(225,150);
+	  	ctx.lineTo(75,100);
+	  	ctx.lineTo(200,50);
+	 	ctx.fill();
 }
